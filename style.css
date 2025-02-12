@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and Overall Layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFF8DC;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Headers and Navigation */
+header {
+    background-color: #2F4F4F;
+    color: #FFF8DC;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;  /* Ensures the navigation items are laid out horizontally */
+    padding: 0;
+    margin: 0;
+    align-items: center; /* Align items vertically within the nav element */
+}
+
+nav ul li {
+    margin: 0 20px; /* Horizontal spacing between navigation items */
+}
+
+nav ul li a {
+    color: #FFF8DC;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Main Content Area Styles */
+main {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Center headings */
+h1, h2, h3 {
+    color: #008080;
+    text-align: center;
+}
+
+/* Center all images within sections */
+section img {
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+/* Make the cooking image circular */
+.circular {
+    border-radius: 50%;
+    width: 200px;  /* Adjust width as needed */
+    height: 200px; /* Height should match width for a perfect circle */
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #2F4F4F;
+    color: #FFF8DC;
+    width: 100%;
+}
+
+/*  Adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stacks nav items vertically on small screens */
+        align-items: center; /* Center alignment for stacked items */
+    }
+    nav ul li {
+        margin: 10px 0; /* Increase spacing when stacked */
+    }
+}
+
+
+
